@@ -1,0 +1,22 @@
+
+
+Importing file: C:\Users\Sreenivas Bandaru\IBM\ACET12\workspace\soapope\opertion.wsdl
+
+The WSDL import will proceed with bindings opertionSOAP.
+Creating wsdl schema document for file:///C:/Users/Sreenivas Bandaru/IBM/ACET12/workspace/soapope/opertion.wsdl.
+Parsing wsdl binding {http://www.example.org/opertion/}opertionSOAP.
+Parsing wsdl binding input addtion.
+Parsing wsdl binding output addtion.
+Processing doc style for operation addtion.
+Populating WSDL schema opertion.xsd.
+Creating file opertion.xsd in the workspace.
+Creating file opertion_InlineSchema1.xsd in the workspace.
+Copying source WSDL opertion.wsdl to opertion.wsdl.
+
+Elapsed time processing this message definition file: 0.348 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+
