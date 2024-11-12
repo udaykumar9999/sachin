@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "rtrt",
+    "version": "1.0.0",
+    "description": "rtrt"
+  },
+  "servers": [
+    {
+      "url": "/rtrt/v1"
+    }
+  ],
+  "components": {
+    "schemas": {}
+  },
+  "paths": {
+    "/new-path": {
+      "summary": "get",
+      "put": {
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
+    }
+  }
+}
