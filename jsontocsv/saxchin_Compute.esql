@@ -1,0 +1,17 @@
+
+
+CREATE COMPUTE MODULE saxchin_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CREATE FIELD OutputRoot.DFDL.ret;
+		FOR InRef AS InputRoot.JSON.Data.school.teacher.Item[] DO
+			create lastchild of OutputRoot.DFDL.ret name 'teacher';
+			--create lastchild of OutputRoot.DFDL.school as OutRef name 'teacher';
+			DECLARE OutRef REFERENCE TO OutputRoot.DFDL.ret.teacher;
+			Move OutRef to OutputRoot.DFDL.ret.[<];
+			SET OutRef.name = InRef.name;
+			SET OutRef.subject = InRef.subject;
+		END FOR;
+		RETURN TRUE;
+	END;
+END MODULE;
